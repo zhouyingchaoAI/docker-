@@ -1,0 +1,22 @@
+{
+    "registry-mirrors":[
+        "https://alzgoonw.mirror.aliyuncs.com",
+        "https://3x2akrmu.mirror.aliyuncs.com",
+        "http://docker.mirrors.ustc.edu.cn",
+        "http://hub-mirror.c.163.com",
+        "http://registry.docker-cn.com",
+        "https://pee6w651.mirror.aliyuncs.com"
+    ] ,
+"exec-opts":["native.cgroupdriver=systemd"],    
+    "insecure-registries":[
+        "192.168.10.60:30002",
+        "docker.mirrors.ustc.edu.cn",
+        "registry.docker-cn.com"
+    ],
+    "runtimes": {
+        "nvidia": {
+            "path": "nvidia-container-runtime",
+            "runtimeArgs": []
+        }
+    }
+}     
